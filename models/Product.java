@@ -2,12 +2,11 @@ package models;
 
 public class Product implements Comparable<Product> {
     private String nombre;
-    private String contenido;
     private int precio;
 
-    public Product(String nombre, String contenido, int precio) {
+
+    public Product(String nombre, int precio) {
         this.nombre = nombre;
-        this.contenido = contenido;
         this.precio = precio;
     }
 
@@ -17,14 +16,6 @@ public class Product implements Comparable<Product> {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getContenido() {
-        return this.contenido;
-    }
-
-    public void setContenido(String contenido) {
-        this.contenido = contenido;
     }
 
     public int getPrecio() {
